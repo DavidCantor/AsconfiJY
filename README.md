@@ -1,75 +1,80 @@
-# Nuxt Minimal Starter
+# 🌐 Asconfi-JY — Accounting & Financial Advisory Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Professional business website built for an **accounting and financial advisory office**, focused on **SEO, performance, and client conversion**.
 
-## Setup
+This project showcases my specialization in **Nuxt (SSR)** for business-oriented websites.
 
-Make sure to install dependencies:
+🔗 Live site: https://asconfijy.netlify.app/
 
-```bash
-# npm
-npm install
+---
 
-# pnpm
-pnpm install
+## 🎯 Project Purpose
 
-# yarn
-yarn install
+Asconfi-JY needed a **clear, trustworthy, and SEO-optimized website** to:
 
-# bun
-bun install
-```
+- Present accounting and financial services professionally
+- Educate potential clients through content
+- Capture leads via contact forms
+- Improve online visibility and credibility
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+## 🧠 My Role
 
-```bash
-# npm
-npm run dev
+I worked as a **Junior Frontend Developer specialized in Nuxt**, responsible for:
 
-# pnpm
-pnpm dev
+- Project structure and setup in Nuxt (SSR)
+- UI development with Tailwind CSS
+- SEO implementation and testing
+- Performance and best practices
+- Deployment and configuration
 
-# yarn
-yarn dev
+This project was developed end-to-end with a **real business use case**, not as a demo.
 
-# bun
-bun run dev
-```
+---
 
-## Production
+## 🛠️ Tech Stack
 
-Build the application for production:
+- **Framework:** Nuxt 4 (Server-Side Rendering)
+- **Styling:** Tailwind CSS
+- **SEO:** Meta tags, semantic structure, SSR optimization
+- **Deployment:** Netlify
 
-```bash
-# npm
-npm run build
+---
 
-# pnpm
-pnpm build
+## ✨ Key Features
 
-# yarn
-yarn build
+- Server-Side Rendering (SSR) for improved SEO and performance
+- SEO testing and optimization
+- Clear service-oriented content structure
+- Educational blog section
+- Contact forms for client acquisition
+- Responsive, mobile-first design
+- Clean and maintainable codebase
 
-# bun
-bun run build
-```
+---
 
-Locally preview production build:
+## 📈 Why This Project Matters
 
-```bash
-# npm
-npm run preview
+This project reflects my focus on building:
 
-# pnpm
-pnpm preview
+- **Business-ready websites**
+- SEO-friendly architectures
+- Clean and scalable Nuxt projects
+- Interfaces designed for clarity and conversion
 
-# yarn
-yarn preview
+It represents the type of solution I offer to **small and medium businesses**.
 
-# bun
-bun run preview
-```
+---
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 💼 Freelance Use Case
+
+This project is an example of the services I provide as a junior freelance developer:
+
+- Business websites with Nuxt (SSR)
+- Landing pages and service websites
+- SEO-oriented frontend development
+- Integration-ready architecture for future backend APIs
+
+📫 Contact:  
+**Email:** dsantiagocanvar@gmail.com
