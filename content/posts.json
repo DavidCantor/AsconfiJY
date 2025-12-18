@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Nuevas Obligaciones Tributarias 2025: Lo que Toda Empresa Debe Saber",
+    "excerpt": "Actualización completa de los cambios en legislación tributaria para el próximo año fiscal y cómo afectarán a tu empresa.",
+    "category": "Fiscal",
+    "date": "15 Nov 2025",
+    "slug": "nuevas-obligaciones-tributarias-2025",
+    "featured": true,
+    "readTime": "5 min lectura",
+    "icon": "📋",
+    "author": { "name": "José Oñate", "initials": "MG", "role": "Cargo" },
+    "popular": true
+  },
+  {
+    "id": 2,
+    "title": "Cómo Optimizar tu Flujo de Efectivo en Tiempos de Incertidumbre",
+    "excerpt": "Estrategias prácticas y herramientas para mejorar la gestión de tesorería y mantener tu negocio saludable.",
+    "category": "Finanzas",
+    "date": "10 Nov 2025",
+    "slug": "optimizar-flujo-efectivo",
+    "featured": true,
+    "readTime": "7 min lectura",
+    "icon": "💰",
+    "author": { "name": "José Oñate", "initials": "CR", "role": "Cargo" },
+    "popular": true
+  },
+  {
+    "id": 4,
+    "title": "Beneficios Tributarios para PyMEs: Aprovecha Todos los Incentivos",
+    "excerpt": "Descubre los incentivos tributarios disponibles y cómo aplicarlos correctamente en tu pequeña o mediana empresa.",
+    "category": "Fiscal",
+    "date": "1 Nov 2025",
+    "slug": "beneficios-tributarios-pymes",
+    "featured": false,
+    "readTime": "6 min lectura",
+    "icon": "🏢",
+    "author": { "name": "José Oñate", "initials": "MG", "role": "Cargo" },
+    "popular": false
+  },
+  {
+    "id": 5,
+    "title": "Mejores Prácticas en Gestión de Nómina para Evitar Sanciones",
+    "excerpt": "Consejos expertos para optimizar el proceso de nómina y evitar errores costosos con autoridades laborales.",
+    "category": "Nómina",
+    "date": "28 Oct 2025",
+    "slug": "mejores-practicas-nomina",
+    "featured": false,
+    "readTime": "4 min lectura",
+    "icon": "👥",
+    "author": { "name": "José Oñate", "initials": "AM", "role": "Cargo" },
+    "popular": false
+  },
+  {
+    "id": 6,
+    "title": "Análisis Financiero: Cómo Interpretar tus Estados para Mejores Decisiones",
+    "excerpt": "Guía paso a paso para entender e interpretar correctamente los estados financieros de tu empresa.",
+    "category": "Finanzas",
+    "date": "25 Oct 2025",
+    "slug": "analisis-financiero-decisiones",
+    "featured": false,
+    "readTime": "9 min lectura",
+    "icon": "📈",
+    "author": { "name": "José Oñate", "initials": "CR", "role": "Cargo" },
+    "popular": true
+  },
+  {
+    "id": 7,
+    "title": "Reforma Fiscal: Impacto en Empresas de Tecnología",
+    "excerpt": "Análisis detallado de cómo la nueva reforma fiscal afectará específicamente al sector tecnológico.",
+    "category": "Noticias",
+    "date": "20 Oct 2025",
+    "slug": "reforma-fiscal-tecnologia",
+    "featured": false,
+    "readTime": "5 min lectura",
+    "icon": "🚀",
+    "author": { "name": "José Oñate", "initials": "LF", "role": "Cargo" },
+    "popular": false
+  }
+]
