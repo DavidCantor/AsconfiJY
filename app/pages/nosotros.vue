@@ -400,11 +400,11 @@ import { definePageMeta, useHead } from '#imports'
 
 // Meta configuración
 definePageMeta({
-  title: 'Sobre Nosotros - ASCONFI JY | 15+ Años de Experiencia'
+  title: 'Nosotros'
 })
 
 useHead({
-  title: 'Sobre Nosotros - ASCONFI JY | 15+ Años de Experiencia',
+  title: 'Nosotros',
   meta: [
     {
       name: 'description',

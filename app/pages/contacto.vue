@@ -401,11 +401,11 @@ import ContactForm from '@/components/ContactForm.vue'
 
 // Meta configuración
 definePageMeta({
-  title: 'Contacto - ASCONFI JY | Consulta Gratuita'
+  title: 'Contacto'
 })
 
 useHead({
-  title: 'Contacto - ASCONFI JY | Consulta Gratuita',
+  title: 'Contacto',
   meta: [
     {
       name: 'description',

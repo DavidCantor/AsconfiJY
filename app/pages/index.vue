@@ -336,7 +336,7 @@ import ServiceCard from '@/components/ServiceCard.vue'
 
 // Definir metadatos SEO
 definePageMeta({
-  title: 'ASCONFI JY - Asesoría Contable y Financiera Profesional | Bogotá',
+  title: 'ASCONFI JY - Asesoría Contable y Financiera Profesional',
 })
 
 useHead({

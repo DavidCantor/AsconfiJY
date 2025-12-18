@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: 'ASCONFI JY - Asesoría Contable y Financiera Profesional',
+      title: 'Inicio',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

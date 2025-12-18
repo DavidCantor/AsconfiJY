@@ -516,11 +516,11 @@ import Testimonial from '@/components/Testimonial.vue'
 
 // Meta SEO para la página de servicios
 definePageMeta({
-  title: 'Servicios - ASCONFI JY | Soluciones Contables y Financieras'
+  title: 'Servicios'
 })
 
 useHead({
-  title: 'Servicios - ASCONFI JY | Soluciones Contables y Financieras',
+  title: 'Servicios',
   meta: [
     {
       name: 'description',

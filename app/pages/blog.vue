@@ -434,6 +434,30 @@ const selectedCategories = ref([])
 const newsletterEmail = ref('')
 
 const categories = ['Fiscal', 'Contabilidad', 'Finanzas', 'Nómina', 'Empresas', 'Noticias']
+// Meta SEO para la página de servicios
+definePageMeta({
+  title: 'Blog'
+})
+
+useHead({
+  title: 'Blog',
+  meta: [
+    {
+      name: 'description',
+      content: 'Ofrecemos soluciones contables, fiscales y financieras a medida. Contabilidad, asesoría fiscal, nómina y consultoría financiera para optimizar tu negocio.'
+    },
+    {
+      name: 'keywords',
+      content: 'servicios contables, asesoría fiscal, consultoría financiera, nómina, contabilidad'
+    },
+    { property: 'og:title', content: 'Servicios - ASCONFI JY' },
+    { property: 'og:description', content: 'Soluciones contables y financieras para empresas: contabilidad, fiscalidad, nómina y consultoría.' },
+    { property: 'og:type', content: 'website' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://asconfijy.com/servicios' }
+  ]
+})
 
 // Cargar posts desde archivo JSON centralizado
 import rawPosts from '../../content/posts.json'
