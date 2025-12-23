@@ -20,7 +20,7 @@
               Asconfi<span class="text-[#B88E41]">JY</span>
             </h1>
             <p class="text-xs text-gray-600 mt-0.5 opacity-95 group-hover:opacity-100 transition-opacity duration-300">
-              Asesoría Contable & Fin
+              Asesoría Contable & Financiera
             </p>
           </div>
         </NuxtLink>

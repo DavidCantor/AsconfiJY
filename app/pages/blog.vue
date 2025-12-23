@@ -13,7 +13,7 @@
       <div class="absolute inset-0" :style="patternStyle"></div>
       
       <div class="container relative z-10 mx-auto px-4 lg:px-8">
-        <div class="max-w-4xl mx-auto">
+        <div class="max-w-4xl">
           <!-- Breadcrumb -->
           <div class="flex items-center text-sm text-white/80 mb-8">
             <NuxtLink to="/" class="hover:text-[#B88E41] transition-colors">Inicio</NuxtLink>
@@ -25,7 +25,7 @@
             Blog & <span class="bg-gradient-to-r from-[#B88E41] to-[#D4AF37] bg-clip-text text-transparent">Recursos</span>
           </h1>
           
-          <p class="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-3xl">
+          <p class="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
             Artículos especializados, noticias fiscales y consejos prácticos sobre contabilidad, 
             finanzas y fiscalidad para el éxito de tu empresa.
           </p>
