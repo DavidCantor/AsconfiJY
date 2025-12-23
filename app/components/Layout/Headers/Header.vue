@@ -1,370 +1,163 @@
 <template>
-  <header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200">
-    <nav class="container mx-auto px-4 lg:px-8 py-3">
-      <div class="flex justify-between items-center">
-        <!-- Logo Mejorado - Sin fondo amarillo -->
-        <NuxtLink to="/" class="flex items-center space-x-3 group" aria-label="Ir a inicio - ASCONFI JY">
-          <!-- Contenedor del logo sin fondo -->
-          <div class="flex items-center justify-center">
-            <!-- Logo SVG agrandado -->
-            <img 
-              src="~/assets/logos/sevege.svg" 
-              alt="Logo ASCONFI JY" 
-              class="w-16 h-16 group-hover:scale-105 transition-all duration-300 ease-out"
-              aria-hidden="true"
-            />
-          </div>
-          <div class="hidden sm:block">
-            <!-- Texto en color oscuro para fondo blanco -->
-            <h1 class="text-xl font-bold text-gray-900 tracking-tight transition-transform duration-300 group-hover:translate-x-1">
-              Asconfi<span class="text-[#B88E41]">JY</span>
-            </h1>
-            <p class="text-xs text-gray-600 mt-0.5 opacity-95 group-hover:opacity-100 transition-opacity duration-300">
-              Asesoría Contable & Financiera
-            </p>
-          </div>
-        </NuxtLink>
+  <header class="bg-white/95 backdrop-blur-md sticky top-0 z-[100] border-b border-gray-100">
+    <nav class="container mx-auto px-4 lg:px-8 h-20 flex items-center justify-between">
+      
+      <NuxtLink to="/" class="flex items-center space-x-3 group" aria-label="Asconfi JY - Inicio">
+        <div class="relative overflow-hidden">
+          <img 
+            src="~/assets/logos/sevege.svg" 
+            alt="Logo" 
+            class="w-12 h-12 lg:w-14 lg:h-14 "
+          />
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-none">
+            Asconfi<span class="text-[#B88E41]">JY</span>
+          </span>
+          <span class="text-[10px] lg:text-xs uppercase tracking-widest text-gray-500 font-medium mt-1">
+            Asesoría Contable y Financiera
+          </span>
+        </div>
+      </NuxtLink>
 
-        <!-- Navegación Desktop - Mejorada -->
-        <div class="hidden lg:flex items-center space-x-1">
+      <div class="hidden lg:flex items-center space-x-8">
+        <div class="flex items-center space-x-1">
           <NuxtLink 
-            to="/" 
-            class="nav-link-desktop group"
-            :class="{ 'active-nav': $route.path === '/' }"
+            v-for="item in menuItems" 
+            :key="item.path"
+            :to="item.path"
+            class="px-3 py-2 text-sm font-semibold text-gray-600 hover:text-[#B88E41] transition-colors relative group"
+            :class="{ 'text-[#B88E41]': $route.path === item.path }"
           >
-            Inicio
-          </NuxtLink>
-          <NuxtLink 
-            to="/nosotros" 
-            class="nav-link-desktop group"
-            :class="{ 'active-nav': $route.path.includes('/nosotros') }"
-          >
-            Nosotros
-          </NuxtLink>
-          <NuxtLink 
-            to="/servicios" 
-            class="nav-link-desktop group"
-            :class="{ 'active-nav': $route.path.includes('/servicios') }"
-          >
-            Servicios
-          </NuxtLink>
-          <NuxtLink 
-            to="/blog" 
-            class="nav-link-desktop group"
-            :class="{ 'active-nav': $route.path.includes('/blog') }"
-          >
-            Blog
-          </NuxtLink>
-          <NuxtLink 
-            to="/contacto" 
-            class="nav-link-desktop group"
-            :class="{ 'active-nav': $route.path.includes('/contacto') }"
-          >
-            Contacto
+            {{ item.name }}
+            <span 
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#B88E41] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+              :class="{ 'scale-x-100': $route.path === item.path }"
+            ></span>
           </NuxtLink>
         </div>
 
-        <!-- CTA y Menú Móvil - Mejorado -->
-        <div class="flex items-center space-x-4">
-          <!-- Teléfono Desktop -->
-          <a 
-            href="tel:+573024662228" 
-            class="hidden lg:flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition-all duration-300 ease-out hover:scale-105 group"
-            aria-label="Llamar al teléfono: 302 466 2228"
-          >
-            <div class="w-8 h-8 bg-[#B88E41] rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-            </div>
-            <div>
-              <p class="text-xs text-gray-600 transition-all duration-300 group-hover:translate-y-[-2px]">Llámanos</p>
-              <p class="text-gray-900 font-semibold text-sm transition-all duration-300 group-hover:translate-y-[2px]">302 466 2228</p>
-            </div>
+        <div class="flex items-center border-l border-gray-200 pl-8 space-x-6">
+          <a href="tel:+573024662228" class="flex flex-col items-end group">
+            <span class="text-[10px] text-gray-400 font-bold uppercase tracking-tighter">Llámanos hoy</span>
+            <span class="text-sm font-bold text-gray-900 group-hover:text-[#B88E41] transition-colors">302 466 2228</span>
           </a>
-
-          <!-- Botón CTA Mejorado -->
           <NuxtLink 
             to="/contacto" 
-            class="hidden sm:flex items-center bg-gradient-to-r from-[#B88E41] to-[#D4AF37] text-white px-5 py-3 rounded-xl hover:shadow-lg hover:shadow-[#B88E41]/40 transition-all duration-300 ease-out font-semibold group hover:scale-105"
+            class="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-[#B88E41] transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-gray-200"
           >
-            <span class="transition-transform duration-300 group-hover:translate-x-[-2px]">Consulta Gratis</span>
-            <svg class="w-4 h-4 ml-2 transition-all duration-300 group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
+            Consulta Gratis
           </NuxtLink>
-
-          <!-- Botón Menú Móvil Mejorado -->
-          <button 
-            @click="toggleMenu" 
-            class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 hover:bg-gray-200 transition-all duration-200 ease-out active:scale-95"
-            aria-label="Toggle navigation menu"
-            :aria-expanded="menuOpen"
-          >
-            <svg class="w-6 h-6 text-gray-700 transition-transform duration-200" :class="{ 'rotate-180': menuOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path v-if="!menuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
         </div>
       </div>
 
-      <!-- MENÚ MÓVIL OPTIMIZADO -->
-      <!-- Usamos :class en lugar de v-if para evitar re-renderizados pesados -->
-      <div 
-        ref="mobileMenuRef"
-        class="lg:hidden overflow-hidden transition-all duration-300 ease-out"
-        :class="{
-          'max-h-0 opacity-0 invisible': !menuOpen,
-          'max-h-[500px] opacity-100 visible mt-3 pt-4 pb-6 border-t border-gray-200': menuOpen
-        }"
-        :style="{ willChange: 'max-height, opacity' }"
+      <button 
+        @click="isMenuOpen = !isMenuOpen"
+        class="lg:hidden relative z-[110] w-10 h-10 flex flex-col justify-center items-center group focus:outline-none"
+        aria-label="Abrir menú"
       >
-        <div class="flex flex-col space-y-1">
-          <NuxtLink 
-            v-for="link in mobileLinks"
-            :key="link.to"
-            :to="link.to" 
-            class="mobile-nav-link group"
-            :class="{ 
-              'active-mobile-nav': 
-                link.to === '/' ? $route.path === '/' : 
-                $route.path.startsWith(link.to) 
-            }"
-            @click="closeMenu"
-          >
-            <component 
-              :is="link.icon" 
-              class="w-5 h-5 mr-3 transition-transform duration-200 group-hover:scale-110" 
-              :style="{ willChange: 'transform' }"
-            />
-            <span class="transition-all duration-200 group-hover:translate-x-2" :style="{ willChange: 'transform' }">
-              {{ link.label }}
-            </span>
-          </NuxtLink>
-          
-          <div class="pt-4 mt-2 border-t border-gray-200 space-y-3">
-            <a 
-              href="tel:+573024662228" 
-              class="flex items-center justify-center bg-[#00439D] hover:bg-[#022859] text-white px-4 py-3 rounded-lg font-semibold transition-all duration-200 ease-out active:scale-95 group"
-              @click="closeMenu"
-              :style="{ willChange: 'transform' }"
-            >
-              <svg class="w-5 h-5 mr-2 transition-transform duration-200 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Llamar Ahora: 302 466 2228
-            </a>
-            <NuxtLink 
-              to="/contacto" 
-              class="flex items-center justify-center bg-gradient-to-r from-[#B88E41] to-[#D4AF37] text-white px-4 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-[#B88E41]/40 transition-all duration-200 ease-out active:scale-95 group"
-              @click="closeMenu"
-              :style="{ willChange: 'transform' }"
-            >
-              <span class="transition-all duration-200 group-hover:translate-x-[-2px]" :style="{ willChange: 'transform' }">
-                Solicitar Consulta Gratis
-              </span>
-              <svg class="w-4 h-4 ml-2 transition-all duration-200 group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </NuxtLink>
+        <span 
+          class="w-6 h-0.5 bg-gray-900 mb-1.5 transition-all duration-300"
+          :class="{ 'rotate-45 translate-y-2': isMenuOpen }"
+        ></span>
+        <span 
+          class="w-6 h-0.5 bg-gray-900 mb-1.5 transition-all duration-300"
+          :class="{ 'opacity-0': isMenuOpen }"
+        ></span>
+        <span 
+          class="w-6 h-0.5 bg-gray-900 transition-all duration-300"
+          :class="{ '-rotate-45 -translate-y-2': isMenuOpen }"
+        ></span>
+      </button>
+
+      <Transition name="fade">
+        <div v-if="isMenuOpen" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] lg:hidden" @click="isMenuOpen = false"></div>
+      </Transition>
+
+      <Transition name="slide">
+        <div v-if="isMenuOpen" class="fixed top-0 right-0 w-[80%] max-w-sm h-screen bg-white z-[105] shadow-2xl lg:hidden flex flex-col">
+          <div class="p-8 pt-24 flex-1">
+            <div class="flex flex-col space-y-6">
+              <NuxtLink 
+                v-for="item in menuItems" 
+                :key="item.path"
+                :to="item.path"
+                @click="isMenuOpen = false"
+                class="text-2xl font-bold text-gray-900 hover:text-[#B88E41] transition-colors flex justify-between items-center group"
+              >
+                {{ item.name }}
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity text-[#B88E41]">→</span>
+              </NuxtLink>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-100">
+              <p class="text-sm text-gray-500 mb-4 font-medium italic">¿Necesitas ayuda inmediata?</p>
+              <a href="tel:+573024662228" class="flex items-center text-[#B88E41] font-bold text-xl mb-6">
+                <span class="mr-2">📞</span> 302 466 2228
+              </a>
+              <NuxtLink 
+                to="/contacto"
+                @click="isMenuOpen = false"
+                class="block w-full text-center bg-[#B88E41] text-white py-4 rounded-xl font-bold shadow-xl shadow-[#B88E41]/20"
+              >
+                Solicitar Consulta
+              </NuxtLink>
+            </div>
           </div>
         </div>
-      </div>
+      </Transition>
+
     </nav>
   </header>
 </template>
 
 <script setup>
-import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
+import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
+const isMenuOpen = ref(false)
 const route = useRoute()
-const menuOpen = ref(false)
-const mobileMenuRef = ref(null)
 
-// Optimización: Prevenir animaciones durante el resize
-let resizeTimeout
-const handleResize = () => {
-  if (window.innerWidth >= 1024 && menuOpen.value) {
-    menuOpen.value = false
-  }
-}
-
-// Optimización: Debounce para resize
-const debouncedResize = () => {
-  clearTimeout(resizeTimeout)
-  resizeTimeout = setTimeout(handleResize, 100)
-}
-
-onMounted(() => {
-  window.addEventListener('resize', debouncedResize)
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', debouncedResize)
-  clearTimeout(resizeTimeout)
-})
-
-const toggleMenu = () => {
-  // Solicitar el frame de animación para mejor rendimiento
-  requestAnimationFrame(() => {
-    menuOpen.value = !menuOpen.value
-  })
-}
-
-const closeMenu = () => {
-  requestAnimationFrame(() => {
-    menuOpen.value = false
-  })
-}
-
-// Cerrar menú cuando cambia la ruta (con requestAnimationFrame)
-watch(() => route.path, () => {
-  if (menuOpen.value) {
-    requestAnimationFrame(() => {
-      menuOpen.value = false
-    })
-  }
-})
-
-// Iconos optimizados - Componentes simples
-const createIcon = (d) => ({
-  template: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="will-change: transform;">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="d" />
-  </svg>`,
-  props: ['d']
-})
-
-const mobileLinks = [
-  { 
-    to: '/', 
-    label: 'Inicio', 
-    icon: { template: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="will-change: transform;">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-    </svg>` }
-  },
-  { 
-    to: '/nosotros', 
-    label: 'Nosotros', 
-    icon: { template: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="will-change: transform;">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-    </svg>` }
-  },
-  { 
-    to: '/servicios', 
-    label: 'Servicios', 
-    icon: { template: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="will-change: transform;">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-    </svg>` }
-  },
-  { 
-    to: '/blog', 
-    label: 'Blog', 
-    icon: { template: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="will-change: transform;">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-    </svg>` }
-  },
-  { 
-    to: '/contacto', 
-    label: 'Contacto', 
-    icon: { template: `<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="will-change: transform;">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-    </svg>` }
-  }
+const menuItems = [
+  { name: 'Inicio', path: '/' },
+  { name: 'Nosotros', path: '/nosotros' },
+  { name: 'Servicios', path: '/servicios' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Contacto', path: '/contacto' },
 ]
+
+// Cerrar menú al cambiar de ruta
+watch(() => route.path, () => {
+  isMenuOpen.value = false
+})
+
+// Bloquear scroll cuando el menú está abierto
+watch(isMenuOpen, (val) => {
+  if (process.client) {
+    document.body.style.overflow = val ? 'hidden' : ''
+  }
+})
 </script>
 
-<style scoped lang="postcss">
-/* Optimización: Usar transform y opacity en lugar de height/max-height */
-.mobile-nav-link {
-  @apply flex items-center px-4 py-3 text-gray-700 rounded-lg font-medium relative overflow-hidden;
-  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  will-change: transform;
+<style scoped>
+/* Transición de Fondo */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 
-.mobile-nav-link:hover {
-  @apply text-gray-900 bg-gray-100;
+/* Transición del Menú Lateral */
+.slide-enter-active, .slide-leave-active {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.slide-enter-from, .slide-leave-to {
+  transform: translateX(100%);
 }
 
-/* Línea inferior para enlaces móviles */
-.mobile-nav-link::after {
-  content: '';
-  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#B88E41] to-[#D4AF37];
-  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: width;
-}
-
-.mobile-nav-link:hover::after {
-  @apply w-full;
-}
-
-/* Estado activo móvil - Solo línea inferior */
-.active-mobile-nav {
-  @apply text-gray-900 bg-gray-100;
-}
-
-.active-mobile-nav::after {
-  @apply w-full;
-}
-
-/* Optimización para animaciones */
-.nav-link-desktop,
-.mobile-nav-link,
-button {
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-
-/* Mejorar performance en móviles */
-@media (max-width: 1023px) {
-  button[aria-label="Toggle navigation menu"] {
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  .mobile-nav-link {
-    -webkit-tap-highlight-color: transparent;
-    transform: translateZ(0);
-  }
-}
-
-/* Focus visible para accesibilidad (WCAG) */
-a:focus-visible,
-button:focus-visible,
-[role="button"]:focus-visible {
-  outline: 2px solid #B88E41;
-  outline-offset: 2px;
-  border-radius: 0.375rem;
-}
-
-.nav-link-desktop {
-  @apply px-4 py-2 text-gray-700 rounded-lg font-medium text-sm relative overflow-hidden;
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link-desktop:hover {
-  @apply text-gray-900 bg-gray-100;
-}
-
-.nav-link-desktop::after {
-  content: '';
-  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#B88E41] to-[#D4AF37];
-  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link-desktop:hover::after {
-  @apply w-full;
-}
-
-.active-nav {
-  @apply text-gray-900;
-}
-
-.active-nav::after {
-  @apply w-full;
+/* Efecto sutil para el logo */
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 </style>

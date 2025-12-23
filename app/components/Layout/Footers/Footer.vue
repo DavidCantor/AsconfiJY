@@ -1,7 +1,5 @@
-<!-- components/Footer.vue -->
 <template>
   <footer class="bg-gradient-to-b from-[#001D3C] to-[#000D20] text-white pt-16 pb-8 border-t border-[#022859]/30">
-    <!-- Wave separator -->
     <div class="w-full overflow-hidden mb-12">
       <svg class="w-full h-12" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="currentColor" class="text-[#022859]/20"></path>
@@ -10,7 +8,6 @@
 
     <div class="container mx-auto px-4 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
-        <!-- Logo y descripción mejorado -->
         <div class="lg:pr-8">
           <div class="flex items-start space-x-3 mb-6 group">
             <div class="w-14 h-14 bg-gradient-to-br from-[#B88E41] to-[#D4AF37] rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
@@ -27,7 +24,6 @@
             Brindamos soluciones contables y financieras integrales para empresas y particulares, garantizando exactitud, confianza y crecimiento sostenible.
           </p>
           
-          <!-- Newsletter -->
           <div class="bg-[#022859]/30 p-4 rounded-xl border border-[#00439D]/20">
             <p class="text-sm text-white mb-3 font-medium">📩 Suscríbete a nuestro boletín</p>
             <div class="flex">
@@ -43,97 +39,33 @@
           </div>
         </div>
 
-        <!-- Servicios rápidos mejorado -->
         <div>
           <h3 class="text-lg font-bold mb-6 pb-3 border-b border-[#00439D]/30 text-white flex items-center">
             <div class="w-2 h-2 bg-[#B88E41] rounded-full mr-2"></div>
             Servicios
           </h3>
           <ul class="space-y-3">
-            <li>
-              <a href="/servicios#contable" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41] transition-colors"></div>
-                Contabilidad Integral
-              </a>
-            </li>
-            <li>
-              <a href="/servicios#fiscal" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41] transition-colors"></div>
-                Asesoría Fiscal
-              </a>
-            </li>
-            <li>
-              <a href="/servicios#financiero" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41] transition-colors"></div>
-                Consultoría Financiera
-              </a>
-            </li>
-            <li>
-              <a href="/servicios#nomina" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41] transition-colors"></div>
-                Nómina
-              </a>
-            </li>
-            <li>
-              <a href="/servicios#empresas" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41] transition-colors"></div>
-                Servicios Empresariales
-              </a>
-            </li>
+            <li><a href="/servicios#contable" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41]"></div>Contabilidad Integral</a></li>
+            <li><a href="/servicios#fiscal" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41]"></div>Asesoría Fiscal</a></li>
+            <li><a href="/servicios#financiero" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41]"></div>Consultoría Financiera</a></li>
+            <li><a href="/servicios#nomina" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41]"></div>Nómina</a></li>
+            <li><a href="/servicios#empresas" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><div class="w-1.5 h-1.5 bg-[#00439D] rounded-full mr-3 group-hover:bg-[#B88E41]"></div>Servicios Empresariales</a></li>
           </ul>
         </div>
 
-        <!-- Enlaces rápidos mejorado -->
         <div>
           <h3 class="text-lg font-bold mb-6 pb-3 border-b border-[#00439D]/30 text-white flex items-center">
             <div class="w-2 h-2 bg-[#B88E41] rounded-full mr-2"></div>
             Enlaces Rápidos
           </h3>
           <ul class="space-y-3">
-            <li>
-              <NuxtLink to="/nosotros" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Sobre Nosotros
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/servicios" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                Todos los Servicios
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/blog" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                </svg>
-                Blog y Recursos
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/contacto" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                Contacto
-              </NuxtLink>
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1">
-                <svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-                Política de Privacidad
-              </a>
-            </li>
+            <li><NuxtLink to="/nosotros" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Sobre Nosotros</NuxtLink></li>
+            <li><NuxtLink to="/servicios" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>Todos los Servicios</NuxtLink></li>
+            <li><NuxtLink to="/blog" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" /></svg>Blog y Recursos</NuxtLink></li>
+            <li><NuxtLink to="/contacto" class="text-gray-400 hover:text-white group flex items-center transition-all duration-200 hover:translate-x-1"><svg class="w-4 h-4 mr-3 text-[#00439D] group-hover:text-[#B88E41]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>Contacto</NuxtLink></li>
           </ul>
         </div>
 
-        <!-- Contacto mejorado -->
         <div>
           <h3 class="text-lg font-bold mb-6 pb-3 border-b border-[#00439D]/30 text-white flex items-center">
             <div class="w-2 h-2 bg-[#B88E41] rounded-full mr-2"></div>
@@ -142,93 +74,69 @@
           <ul class="space-y-4">
             <li class="flex items-start group">
               <div class="w-10 h-10 bg-[#022859] rounded-lg flex items-center justify-center mr-3 group-hover:bg-[#B88E41] transition-colors duration-200 flex-shrink-0">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
               </div>
-              <div>
-                <p class="text-sm text-gray-400">Dirección</p>
-                <p class="text-white text-sm">Villa Marcela, Cra. 10a #10-05 piso 2, Mosquera, Cundinamarca</p>
-              </div>
+              <div><p class="text-sm text-gray-400">Dirección</p><p class="text-white text-sm">Villa Marcela, Cra. 10a #10-05 piso 2, Mosquera</p></div>
             </li>
-            
             <li class="flex items-start group">
               <div class="w-10 h-10 bg-[#022859] rounded-lg flex items-center justify-center mr-3 group-hover:bg-[#B88E41] transition-colors duration-200 flex-shrink-0">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
               </div>
-              <div>
-                <p class="text-sm text-gray-400">Teléfono</p>
-                <a href="tel:+573024662228" class="text-white text-sm hover:text-[#B88E41] transition-colors">302 466 2228</a>
-              </div>
-            </li>
-            
-            <li class="flex items-start group">
-              <div class="w-10 h-10 bg-[#022859] rounded-lg flex items-center justify-center mr-3 group-hover:bg-[#B88E41] transition-colors duration-200 flex-shrink-0">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <div>
-                <p class="text-sm text-gray-400">Email</p>
-                <a href="mailto:info@ascofijy.com" class="text-white text-sm hover:text-[#B88E41] transition-colors break-all">info@ascofijy.com</a>
-              </div>
+              <div><p class="text-sm text-gray-400">Teléfono</p><a href="tel:+573024662228" class="text-white text-sm hover:text-[#B88E41]">302 466 2228</a></div>
             </li>
           </ul>
           
-          <!-- Redes Sociales Mejoradas -->
-          <div class="mt-8">
-            <p class="text-sm text-gray-400 mb-4">Síguenos</p>
-            <div class="flex space-x-3">
-              <a href="#" class="w-10 h-10 bg-[#022859] hover:bg-[#B88E41] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110 group">
-                <span class="text-white group-hover:scale-110 transition-transform">f</span>
-              </a>
-              <a href="#" class="w-10 h-10 bg-[#022859] hover:bg-[#B88E41] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110 group">
-                <span class="text-white group-hover:scale-110 transition-transform">𝕏</span>
-              </a>
-              <a href="#" class="w-10 h-10 bg-[#022859] hover:bg-[#B88E41] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110 group">
-                <span class="text-white group-hover:scale-110 transition-transform">in</span>
-              </a>
-              <a href="#" class="w-10 h-10 bg-[#022859] hover:bg-[#B88E41] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110 group">
-                <span class="text-white group-hover:scale-110 transition-transform">ig</span>
-              </a>
-            </div>
+          <div class="mt-8 flex space-x-3">
+            <a href="#" class="w-10 h-10 bg-[#022859] hover:bg-[#B88E41] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110 group"><span class="text-white">f</span></a>
+            <a href="#" class="w-10 h-10 bg-[#022859] hover:bg-[#B88E41] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110 group"><span class="text-white">in</span></a>
+            <a href="#" class="w-10 h-10 bg-[#022859] hover:bg-[#B88E41] rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110 group"><span class="text-white">ig</span></a>
           </div>
         </div>
       </div>
 
-      <!-- Línea divisoria y copyright -->
       <div class="mt-16 pt-8 border-t border-[#022859]/50">
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
           <div class="text-gray-500 text-sm">
-            <p>© 2025 ascofiJY Asesoría Contable & Financiera. Todos los derechos reservados.</p>
+            <p>© 2025 AsconfiJY Asesoría Contable & Financiera. Todos los derechos reservados.</p>
           </div>
           
           <div class="flex items-center space-x-6 text-gray-500 text-sm">
-            <a href="#" class="hover:text-[#B88E41] transition-colors">Términos del Servicio</a>
-            <a href="#" class="hover:text-[#B88E41] transition-colors">Política de Cookies</a>
-            <a href="#" class="hover:text-[#B88E41] transition-colors">Mapa del Sitio</a>
+            <a href="#" class="hover:text-[#B88E41] transition-colors">Términos</a>
+            <a href="#" class="hover:text-[#B88E41] transition-colors">Privacidad</a>
           </div>
         </div>
         
-        <!-- Sello de confianza -->
         <div class="mt-6 flex justify-center">
           <div class="inline-flex items-center space-x-4 px-4 py-2 bg-[#022859]/30 rounded-lg border border-[#00439D]/20">
             <div class="w-6 h-6 bg-[#B88E41] rounded-full flex items-center justify-center">
-              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-              </svg>
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
             </div>
-            <span class="text-xs text-gray-400">Asesoría Certificada • Contadores Profesionales • Confidencialidad Garantizada</span>
+            <span class="text-[10px] md:text-xs text-gray-500 uppercase tracking-wider">Asesoría Certificada • Confidencialidad Garantizada</span>
+          </div>
+        </div>
+
+        <div class="mt-10 flex justify-center border-t border-white/5 pt-6">
+          <div class="flex flex-col items-center space-y-2">
+            <a 
+              href="https://wa.me/573193831573" 
+              target="_blank"
+              class="text-[10px] uppercase tracking-[0.2em] text-gray-600 hover:text-[#B88E41] transition-all duration-300 flex items-center group"
+            >
+              <span class="opacity-50">Desarrollado por</span>
+              <span class="mx-1.5 font-bold text-gray-500 group-hover:text-[#B88E41]">David Cantor</span>
+              <svg class="w-3.5 h-3.5 ml-1 fill-current opacity-40 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.82c1.516.903 3.036 1.378 4.631 1.379 5.234 0 9.49-4.259 9.492-9.495.002-5.233-4.258-9.492-9.491-9.492-5.233 0-9.491 4.258-9.493 9.491-.002 1.8.483 3.51 1.396 4.987l-1.011 3.693 3.784-.993zm11.723-6.824c-.328-.164-1.944-.959-2.245-1.069-.301-.109-.52-.164-.739.164-.219.328-.847 1.069-1.039 1.288-.192.219-.383.246-.711.081-.328-.164-1.383-.51-2.635-1.627-.973-.867-1.63-1.939-1.821-2.267-.192-.328-.021-.506.143-.669.148-.147.328-.383.492-.574.164-.192.219-.328.328-.547.11-.219.055-.41-.028-.574-.082-.164-.739-1.777-1.011-2.433-.265-.64-.53-.553-.739-.563-.192-.01-.41-.012-.629-.012s-.574.081-.874.41c-.301.328-1.148 1.121-1.148 2.733 0 1.612 1.175 3.169 1.339 3.388.164.219 2.312 3.53 5.6 4.951.781.338 1.39.54 1.865.69.785.249 1.498.214 2.062.129.629-.095 1.944-.793 2.218-1.558.274-.765.274-1.422.192-1.558-.082-.137-.301-.219-.629-.383z"/>
+              </svg>
+            </a>
+            <a 
+              href="mailto:dsantiagocanvar@gmail.com" 
+              class="text-[9px] text-gray-700 hover:text-[#B88E41] transition-colors"
+            >
+              dsantiagocanvar@gmail.com
+            </a>
           </div>
         </div>
       </div>
     </div>
   </footer>
 </template>
-
-<script setup>
-// El año se genera dinámicamente
-</script>
