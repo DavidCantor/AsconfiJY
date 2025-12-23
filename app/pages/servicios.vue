@@ -13,9 +13,9 @@
       <div class="absolute inset-0" :style="patternStyle"></div>
       
       <div class="container relative z-10 mx-auto px-4 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="max-w-4xl">
           <!-- Breadcrumb -->
-          <div class="flex items-center justify-center text-sm text-white/80 mb-8">
+          <div class="flex items-center text-sm text-white/80 mb-8">
             <NuxtLink to="/" class="hover:text-[#B88E41] transition-colors">Inicio</NuxtLink>
             <span class="mx-2">/</span>
             <span class="text-[#B88E41] font-medium">Servicios</span>
@@ -25,12 +25,12 @@
             Nuestros <span class="bg-gradient-to-r from-[#B88E41] to-[#D4AF37] bg-clip-text text-transparent">Servicios</span> Profesionales
           </h1>
           
-          <p class="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p class="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
             Ofrecemos una gama completa de soluciones contables, fiscales y financieras 
             diseñadas para optimizar tu negocio, garantizar cumplimiento y maximizar rentabilidad.
           </p>
           
-          <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div class="flex flex-col sm:flex-row gap-6  items-center">
             <a href="#servicios" 
               class="group relative overflow-hidden bg-gradient-to-r from-[#B88E41] via-[#D4AF37] to-[#B88E41] text-white px-10 py-4 rounded-xl hover:shadow-2xl hover:shadow-[#B88E41]/30 transition-all duration-300 font-bold text-lg w-full sm:w-auto text-center"
               :style="buttonGradientStyle"
